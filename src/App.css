@@ -1,0 +1,91 @@
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
+.sidebar {
+  box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+}
+.nav-item,
+.navbar {
+  z-index: 10000;
+}
+@media  screen and (max-width:800px) {
+  .sidebar{
+    z-index: 10000000;
+  }
+}
+
+.e-dlg-center-center, .e-quick-popup-wrapper.e-device{
+  z-index: 1000000 !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* color-picker style  */
+
+ #preview {
+  background: transparent
+    url('https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png')
+    no-repeat;
+  display: inline-block;
+  height: 80px;
+  margin: 10px 0;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #008000;
+}
+
+.e-input-group:not(.e-float-icon-left), .e-input-group.e-success:not(.e-float-icon-left), .e-input-group.e-warning:not(.e-float-icon-left), .e-input-group.e-error:not(.e-float-icon-left), .e-input-group.e-control-wrapper:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left){
+  border: none;
+}
+
+/* Card hover/transition effects */
+.card, .rounded-2xl, .p-6 {
+  transition: box-shadow 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+.card:hover, .rounded-2xl:hover, .p-6:hover {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Widget backgrounds */
+.bg-hero-pattern {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+/* Responsive tweaks for dashboard widgets */
+@media (max-width: 900px) {
+  .md\:w-760, .md\:w-400, .md\:w-96 {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+.dashboard-bg {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(40, 44, 52, 0.7), rgba(40, 44, 52, 0.7)), /* semi-transparent overlay */
+    url('https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg') center/cover no-repeat;
+  /* Adjust the rgba for more/less transparency */
+}
+
+.fluid-glass {
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: box-shadow 0.3s, background 0.3s;
+}
+.fluid-glass:hover {
+  box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.25);
+  background: rgba(255,255,255,0.28);
+}
